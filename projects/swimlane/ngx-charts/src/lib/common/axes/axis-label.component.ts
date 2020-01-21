@@ -15,7 +15,7 @@ import { Component, Input, ElementRef, OnChanges, SimpleChanges, ChangeDetection
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AxisLabelComponent implements OnChanges {
+export class AxisLabel implements OnChanges {
   @Input() orient;
   @Input() label;
   @Input() offset;

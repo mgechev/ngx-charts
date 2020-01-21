@@ -18,7 +18,7 @@ import { id } from '@swimlane/ngx-charts//utils/id';
 import {
   ViewDimensions,
   ColorHelper,
-  BaseChartComponent,
+  BaseChart,
   calculateViewDimensions
 } from 'projects/swimlane/ngx-charts/src/public-api';
 
@@ -123,7 +123,7 @@ import {
     ])
   ]
 })
-export class BubbleChartInteractiveComponent extends BaseChartComponent {
+export class BubbleChartInteractive extends BaseChart {
   @Input() showGridLines: boolean = true;
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';

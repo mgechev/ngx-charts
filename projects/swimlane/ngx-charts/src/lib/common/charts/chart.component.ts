@@ -52,7 +52,7 @@ import { TooltipService } from '../tooltip/tooltip.service';
     ])
   ]
 })
-export class ChartComponent implements OnChanges {
+export class Chart implements OnChanges {
   @Input() view;
   @Input() showLegend = false;
   @Input() legendOptions: any;

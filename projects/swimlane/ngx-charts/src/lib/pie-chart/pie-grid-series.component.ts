@@ -36,7 +36,7 @@ import { pie } from 'd3-shape';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PieGridSeriesComponent implements OnChanges {
+export class PieGridSeries implements OnChanges {
   @Input() colors;
   @Input() data;
   @Input() innerRadius = 70;

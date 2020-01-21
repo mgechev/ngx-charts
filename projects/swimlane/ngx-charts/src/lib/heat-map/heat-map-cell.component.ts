@@ -33,7 +33,7 @@ import { id } from '../utils/id';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeatMapCellComponent implements OnChanges {
+export class HeatMapCell implements OnChanges {
   @Input() fill;
   @Input() x;
   @Input() y;

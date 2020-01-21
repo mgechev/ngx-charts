@@ -3,7 +3,7 @@ import { scaleLinear, scaleTime, scaleBand } from 'd3-scale';
 import { brushX } from 'd3-brush';
 import { select, event as d3event } from 'd3-selection';
 import {
-  BaseChartComponent,
+  BaseChart,
   ColorHelper,
   ViewDimensions,
   calculateViewDimensions,
@@ -71,7 +71,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TimelineFilterBarChartComponent extends BaseChartComponent {
+export class TimelineFilterBarChart extends BaseChart {
   @Input() autoScale = false;
   @Input() schemeType: string = 'ordinal';
   @Input() valueDomain: number[];

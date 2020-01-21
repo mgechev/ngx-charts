@@ -14,7 +14,7 @@ import { Component, Input, OnChanges, ChangeDetectionStrategy, SimpleChanges } f
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SvgRadialGradientComponent implements OnChanges {
+export class SvgRadialGradient implements OnChanges {
   @Input() color: string;
   @Input() name: string;
   @Input() startOpacity: number;

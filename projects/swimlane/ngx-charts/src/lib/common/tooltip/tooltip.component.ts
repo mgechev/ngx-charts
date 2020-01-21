@@ -32,7 +32,7 @@ import { AlignmentTypes } from './alignment.type';
   encapsulation: ViewEncapsulation.None,
   styleUrls: ['./tooltip.component.scss']
 })
-export class TooltipContentComponent implements AfterViewInit {
+export class TooltipContent implements AfterViewInit {
   @Input() host: any;
   @Input() showCaret: boolean;
   @Input() type: StyleTypes;

@@ -56,7 +56,7 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
     ])
   ]
 })
-export class BubbleSeriesComponent implements OnChanges {
+export class BubbleSeries implements OnChanges {
   @Input() data;
   @Input() xScale;
   @Input() yScale;

@@ -7,7 +7,7 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GridPanelComponent {
+export class GridPanel{
   @Input() path;
   @Input() width;
   @Input() height;

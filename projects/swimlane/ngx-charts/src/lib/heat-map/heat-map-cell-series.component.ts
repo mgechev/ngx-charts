@@ -39,7 +39,7 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeatCellSeriesComponent implements OnChanges, OnInit {
+export class HeatCellSeries implements OnChanges, OnInit {
   @Input() data;
   @Input() colors;
   @Input() xScale;

@@ -55,7 +55,7 @@ export interface CardModel {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardSeriesComponent implements OnChanges {
+export class CardSeries implements OnChanges {
   @Input() data: any[];
   @Input() slots: any[];
   @Input() dims;

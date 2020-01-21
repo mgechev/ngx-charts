@@ -4,11 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app.component';
-import { SparklineComponent } from './custom-charts/sparkline/sparkline.component';
-import { TimelineFilterBarChartComponent } from './custom-charts/timeline-filter-bar-chart/timeline-filter-bar-chart.component';
+import { Sparkline} from './custom-charts/sparkline/sparkline.component';
+import { TimelineFilterBarChart} from './custom-charts/timeline-filter-bar-chart/timeline-filter-bar-chart.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts/ngx-charts.module';
 import { NgxUIModule } from '@swimlane/ngx-ui';
-import { ComboChartComponent, ComboSeriesVerticalComponent } from './custom-charts/combo-chart';
+import { ComboChart, ComboSeriesVertical} from './custom-charts/combo-chart';
 import { BubbleChartInteractiveModule } from './custom-charts/bubble-chart-interactive';
 
 @NgModule({
@@ -28,10 +28,10 @@ import { BubbleChartInteractiveModule } from './custom-charts/bubble-chart-inter
   ],
   declarations: [
     AppComponent,
-    SparklineComponent,
-    TimelineFilterBarChartComponent,
-    ComboChartComponent,
-    ComboSeriesVerticalComponent
+    Sparkline,
+    TimelineFilterBarChart,
+    ComboChart,
+    ComboSeriesVertical
   ],
   bootstrap: [AppComponent]
 })

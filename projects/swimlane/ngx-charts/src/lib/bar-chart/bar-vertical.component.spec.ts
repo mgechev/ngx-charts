@@ -7,7 +7,7 @@ import { single } from '../../../../../../src/app/data';
 import { APP_BASE_HREF } from '@angular/common';
 
 import { BarChartModule } from './bar-chart.module';
-import { BarComponent } from './bar.component';
+import { Bar} from './bar.component';
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
@@ -68,7 +68,7 @@ describe('<ngx-charts-bar-vertical>', () => {
       const fixture = TestBed.createComponent(TestComponent);
       fixture.detectChanges();
 
-      const bar = fixture.debugElement.query(By.directive(BarComponent));
+      const bar = fixture.debugElement.query(By.directive(Bar));
 
       expect(bar.componentInstance.width).toEqual(53); // ~(360 - 5 * barPadding) / 6
     }));
@@ -92,7 +92,7 @@ describe('<ngx-charts-bar-vertical>', () => {
         const fixture = TestBed.createComponent(TestComponent);
         fixture.detectChanges();
 
-        const bar = fixture.debugElement.query(By.directive(BarComponent));
+        const bar = fixture.debugElement.query(By.directive(Bar));
 
         expect(bar.componentInstance.width).toEqual(60); // ~(360 - 5 * barPadding) / 6
       });
@@ -115,7 +115,7 @@ describe('<ngx-charts-bar-vertical>', () => {
         const fixture = TestBed.createComponent(TestComponent);
         fixture.detectChanges();
 
-        const bar = fixture.debugElement.query(By.directive(BarComponent));
+        const bar = fixture.debugElement.query(By.directive(Bar));
 
         expect(bar.componentInstance.width).toEqual(43); // ~(360 - 5 * barPadding) / 6
       });

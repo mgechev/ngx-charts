@@ -4,7 +4,7 @@ import { curveLinear } from 'd3-shape';
 
 import { getUniqueXDomainValues } from '@swimlane/ngx-charts/common/domain.helper';
 import {
-  BaseChartComponent,
+  BaseChart,
   ViewDimensions,
   ColorHelper,
   calculateViewDimensions
@@ -37,7 +37,7 @@ import {
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SparklineComponent extends BaseChartComponent {
+export class Sparkline extends BaseChart {
   @Input() autoScale = false;
   @Input() curve: any = curveLinear;
   @Input() schemeType: string = 'linear';

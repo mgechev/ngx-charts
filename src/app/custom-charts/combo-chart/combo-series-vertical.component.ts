@@ -46,7 +46,7 @@ import { formatLabel } from '@swimlane/ngx-charts/common/label.helper';
     ])
   ]
 })
-export class ComboSeriesVerticalComponent implements OnChanges {
+export class ComboSeriesVertical implements OnChanges {
   @Input() dims;
   @Input() type = 'standard';
   @Input() series;

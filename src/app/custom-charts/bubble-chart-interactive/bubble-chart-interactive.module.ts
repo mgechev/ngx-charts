@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { ChartCommonModule } from '@swimlane/ngx-charts//common/chart-common.module';
-import { BubbleChartInteractiveComponent } from './bubble-chart-interactive.component';
-import { BubbleSeriesInteractiveComponent } from './bubble-series-interactive.component';
+import { BubbleChartInteractive} from './bubble-chart-interactive.component';
+import { BubbleSeriesInteractive} from './bubble-series-interactive.component';
 
-export { BubbleChartInteractiveComponent, BubbleSeriesInteractiveComponent };
+export { BubbleChartInteractive, BubbleSeriesInteractive};
 
 @NgModule({
   imports: [ChartCommonModule],
-  declarations: [BubbleChartInteractiveComponent, BubbleSeriesInteractiveComponent],
-  exports: [BubbleChartInteractiveComponent, BubbleSeriesInteractiveComponent]
+  declarations: [BubbleChartInteractive, BubbleSeriesInteractive],
+  exports: [BubbleChartInteractive, BubbleSeriesInteractive]
 })
 export class BubbleChartInteractiveModule {}

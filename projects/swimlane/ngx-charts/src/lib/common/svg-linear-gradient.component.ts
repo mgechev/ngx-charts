@@ -14,7 +14,7 @@ import { Component, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } f
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SvgLinearGradientComponent implements OnChanges {
+export class SvgLinearGradient implements OnChanges {
   @Input() orientation = 'vertical';
   @Input() name;
   @Input() stops: any[];

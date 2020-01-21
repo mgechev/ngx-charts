@@ -8,7 +8,7 @@ import {
   SimpleChanges,
   ChangeDetectionStrategy
 } from '@angular/core';
-import { YAxisTicksComponent } from './y-axis-ticks.component';
+import { YAxisTicks} from './y-axis-ticks.component';
 
 @Component({
   selector: 'g[ngx-charts-y-axis]',
@@ -47,7 +47,7 @@ import { YAxisTicksComponent } from './y-axis-ticks.component';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class YAxisComponent implements OnChanges {
+export class YAxis implements OnChanges {
   @Input() yScale;
   @Input() dims;
   @Input() trimTicks: boolean;
@@ -77,7 +77,7 @@ export class YAxisComponent implements OnChanges {
   strokeWidth: number = 1;
   padding: number = 5;
 
-  @ViewChild(YAxisTicksComponent) ticksComponent: YAxisTicksComponent;
+  @ViewChild(YAxisTicks) ticksComponent: YAxisTicks;
 
   ngOnChanges(changes: SimpleChanges): void {
     this.update();

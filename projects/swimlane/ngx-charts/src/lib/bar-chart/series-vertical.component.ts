@@ -68,7 +68,7 @@ export enum D0Types {
     ])
   ]
 })
-export class SeriesVerticalComponent implements OnChanges {
+export class SeriesVertical implements OnChanges {
   @Input() dims;
   @Input() type = 'standard';
   @Input() series;

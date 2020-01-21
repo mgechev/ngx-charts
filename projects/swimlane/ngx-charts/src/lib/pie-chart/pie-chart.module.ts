@@ -1,32 +1,32 @@
 import { NgModule } from '@angular/core';
 import { ChartCommonModule } from '../common/chart-common.module';
-import { AdvancedPieChartComponent } from './advanced-pie-chart.component';
-import { PieLabelComponent } from './pie-label.component';
-import { PieArcComponent } from './pie-arc.component';
-import { PieChartComponent } from './pie-chart.component';
-import { PieGridComponent } from './pie-grid.component';
-import { PieGridSeriesComponent } from './pie-grid-series.component';
-import { PieSeriesComponent } from './pie-series.component';
+import { AdvancedPieChart} from './advanced-pie-chart.component';
+import { PieLabel} from './pie-label.component';
+import { PieArc} from './pie-arc.component';
+import { PieChart} from './pie-chart.component';
+import { PieGrid} from './pie-grid.component';
+import { PieGridSeries} from './pie-grid-series.component';
+import { PieSeries} from './pie-series.component';
 
 @NgModule({
   imports: [ChartCommonModule],
   declarations: [
-    AdvancedPieChartComponent,
-    PieLabelComponent,
-    PieArcComponent,
-    PieChartComponent,
-    PieGridComponent,
-    PieGridSeriesComponent,
-    PieSeriesComponent
+    AdvancedPieChart,
+    PieLabel,
+    PieArc,
+    PieChart,
+    PieGrid,
+    PieGridSeries,
+    PieSeries
   ],
   exports: [
-    AdvancedPieChartComponent,
-    PieLabelComponent,
-    PieArcComponent,
-    PieChartComponent,
-    PieGridComponent,
-    PieGridSeriesComponent,
-    PieSeriesComponent
+    AdvancedPieChart,
+    PieLabel,
+    PieArc,
+    PieChart,
+    PieGrid,
+    PieGridSeries,
+    PieSeries
   ]
 })
 export class PieChartModule {}

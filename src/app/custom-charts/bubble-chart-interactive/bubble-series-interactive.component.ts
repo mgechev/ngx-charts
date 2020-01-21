@@ -57,7 +57,7 @@ import { formatLabel } from '@swimlane/ngx-charts/common/label.helper';
     ])
   ]
 })
-export class BubbleSeriesInteractiveComponent implements OnChanges {
+export class BubbleSeriesInteractive implements OnChanges {
   @Input() data;
   @Input() xScale;
   @Input() yScale;

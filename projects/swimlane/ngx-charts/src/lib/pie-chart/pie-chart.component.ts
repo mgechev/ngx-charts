@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { DataItem } from '../models/chart-data.model';
 
 @Component({
@@ -56,7 +56,7 @@ import { DataItem } from '../models/chart-data.model';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PieChartComponent extends BaseChartComponent {
+export class PieChart extends BaseChart {
   @Input() labels = false;
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';

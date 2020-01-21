@@ -12,7 +12,7 @@ import {
 import { trigger, style, animate, transition } from '@angular/animations';
 import { scaleLinear } from 'd3-scale';
 
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { getScaleType } from '../common/domain.helper';
@@ -124,7 +124,7 @@ import { id } from '../utils/id';
     ])
   ]
 })
-export class BubbleChartComponent extends BaseChartComponent {
+export class BubbleChart extends BaseChart {
   @Input() showGridLines: boolean = true;
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';

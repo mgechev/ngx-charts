@@ -65,7 +65,7 @@ import { escapeLabel } from '../common/label.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PolarSeriesComponent implements OnChanges {
+export class PolarSeries implements OnChanges {
   @Input() name;
   @Input() data;
   @Input() xScale; // Theta

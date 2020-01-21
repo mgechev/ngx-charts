@@ -27,7 +27,7 @@ import { formatLabel } from '../common/label.helper';
   styleUrls: ['./bar-label.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BarLabelComponent implements OnChanges {
+export class BarLabel implements OnChanges {
   @Input() value;
   @Input() valueFormatting: any;
   @Input() barX;

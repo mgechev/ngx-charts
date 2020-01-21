@@ -28,7 +28,7 @@ import { trimLabel } from '../common/trim-label.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PieLabelComponent implements OnChanges {
+export class PieLabel implements OnChanges {
   @Input() data;
   @Input() radius;
   @Input() label;

@@ -64,7 +64,7 @@ import { decimalChecker, count } from '../common/count/count.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardComponent implements OnChanges, OnDestroy {
+export class Card implements OnChanges, OnDestroy {
   @Input() color;
   @Input() bandColor;
   @Input() textColor;

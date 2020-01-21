@@ -44,7 +44,7 @@ import { MouseEvent } from '../events';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PieArcComponent implements OnChanges {
+export class PieArc implements OnChanges {
   @Input() fill;
   @Input() startAngle: number = 0;
   @Input() endAngle: number = Math.PI * 2;

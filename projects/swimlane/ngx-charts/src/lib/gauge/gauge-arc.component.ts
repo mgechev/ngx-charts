@@ -42,7 +42,7 @@ import { ColorHelper } from '../common/color.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GaugeArcComponent {
+export class GaugeArc{
   @Input() backgroundArc: any;
   @Input() valueArc: any;
   @Input() cornerRadius: any;

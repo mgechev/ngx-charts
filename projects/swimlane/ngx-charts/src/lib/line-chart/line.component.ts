@@ -41,7 +41,7 @@ import { select } from 'd3-selection';
     ])
   ]
 })
-export class LineComponent implements OnChanges {
+export class Line implements OnChanges {
   @Input() path;
   @Input() stroke;
   @Input() data;

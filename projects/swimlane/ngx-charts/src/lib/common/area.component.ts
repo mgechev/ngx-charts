@@ -21,7 +21,7 @@ import { id } from '../utils/id';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AreaComponent implements OnChanges {
+export class Area implements OnChanges {
   @Input() data;
   @Input() path;
   @Input() startingPath;

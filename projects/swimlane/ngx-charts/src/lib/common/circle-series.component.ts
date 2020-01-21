@@ -72,7 +72,7 @@ import { ColorHelper } from '../common/color.helper';
     ])
   ]
 })
-export class CircleSeriesComponent implements OnChanges, OnInit {
+export class CircleSeries implements OnChanges, OnInit {
   @Input() data;
   @Input() type = 'standard';
   @Input() xScale;

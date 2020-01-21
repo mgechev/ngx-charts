@@ -38,7 +38,7 @@ import { reduceTicks } from './ticks.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class XAxisTicksComponent implements OnChanges, AfterViewInit {
+export class XAxisTicks implements OnChanges, AfterViewInit {
   @Input() scale;
   @Input() orient;
   @Input() tickArguments = [5];

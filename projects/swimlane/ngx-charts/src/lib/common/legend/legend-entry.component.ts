@@ -12,7 +12,7 @@ import { Component, Input, Output, ChangeDetectionStrategy, HostListener, EventE
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LegendEntryComponent {
+export class LegendEntry {
   @Input() color: string;
   @Input() label: any;
   @Input() formattedLabel: string;

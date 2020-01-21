@@ -24,7 +24,7 @@ import { line } from 'd3-shape';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GaugeAxisComponent implements OnChanges {
+export class GaugeAxis implements OnChanges {
   @Input() bigSegments: any;
   @Input() smallSegments: any;
   @Input() min: any;

@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { treemap, stratify } from 'd3-hierarchy';
 
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { calculateViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 
@@ -39,7 +39,7 @@ import { ColorHelper } from '../common/color.helper';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TreeMapComponent extends BaseChartComponent {
+export class TreeMap extends BaseChart {
   @Input() results;
   @Input() tooltipDisabled: boolean = false;
   @Input() valueFormatting: any;

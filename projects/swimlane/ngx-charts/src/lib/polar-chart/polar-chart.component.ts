@@ -14,7 +14,7 @@ import { curveCardinalClosed } from 'd3-shape';
 
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { getScaleType } from '../common/domain.helper';
 import { isDate } from '../utils/types';
 
@@ -132,7 +132,7 @@ const twoPI = 2 * Math.PI;
     ])
   ]
 })
-export class PolarChartComponent extends BaseChartComponent {
+export class PolarChart extends BaseChart {
   @Input() legend: boolean;
   @Input() legendTitle: string = 'Legend';
   @Input() legendPosition: string = 'right';

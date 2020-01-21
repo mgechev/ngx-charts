@@ -13,7 +13,7 @@ import {
 } from '@angular/core';
 import { scaleLinear } from 'd3-scale';
 
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 
@@ -80,7 +80,7 @@ import { ColorHelper } from '../common/color.helper';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GaugeComponent extends BaseChartComponent implements AfterViewInit {
+export class Gauge extends BaseChart implements AfterViewInit {
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';
   @Input() legendPosition: string = 'right';

@@ -23,7 +23,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ScaleLegendComponent implements OnChanges {
+export class ScaleLegend implements OnChanges {
   @Input() valueRange;
   @Input() colors;
   @Input() height;

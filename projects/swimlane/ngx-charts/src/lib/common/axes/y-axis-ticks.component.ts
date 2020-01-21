@@ -81,7 +81,7 @@ import { roundedRect } from '../../common/shape.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class YAxisTicksComponent implements OnChanges, AfterViewInit {
+export class YAxisTicks implements OnChanges, AfterViewInit {
   @Input() scale;
   @Input() orient;
   @Input() tickArguments = [5];

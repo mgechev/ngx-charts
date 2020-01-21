@@ -52,7 +52,7 @@ import { id } from '../utils/id';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TreeMapCellComponent implements OnChanges {
+export class TreeMapCell implements OnChanges {
   @Input() data;
   @Input() fill;
   @Input() x;

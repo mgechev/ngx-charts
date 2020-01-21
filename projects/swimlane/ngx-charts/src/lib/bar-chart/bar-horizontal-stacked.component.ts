@@ -14,7 +14,7 @@ import { scaleBand, scaleLinear } from 'd3-scale';
 
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 
 @Component({
   selector: 'ngx-charts-bar-horizontal-stacked',
@@ -105,7 +105,7 @@ import { BaseChartComponent } from '../common/base-chart.component';
     ])
   ]
 })
-export class BarHorizontalStackedComponent extends BaseChartComponent {
+export class BarHorizontalStacked extends BaseChart {
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';
   @Input() legendPosition: string = 'right';

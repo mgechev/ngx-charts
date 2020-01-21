@@ -41,7 +41,7 @@ import { escapeLabel } from '../common/label.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TreeMapCellSeriesComponent implements OnChanges {
+export class TreeMapCellSeries implements OnChanges {
   @Input() data;
   @Input() dims;
   @Input() colors;

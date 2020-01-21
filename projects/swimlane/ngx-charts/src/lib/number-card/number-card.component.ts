@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from '@angular/core';
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
 import { gridLayout, gridSize } from '../common/grid-layout.helper';
@@ -31,7 +31,7 @@ import { gridLayout, gridSize } from '../common/grid-layout.helper';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class NumberCardComponent extends BaseChartComponent {
+export class NumberCard extends BaseChart {
   @Input() cardColor: string;
   @Input() bandColor: string;
   @Input() emptyColor: string = 'rgba(0, 0, 0, 0)';

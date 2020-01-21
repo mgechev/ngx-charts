@@ -61,7 +61,7 @@ import { formatLabel, escapeLabel } from '../common/label.helper';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PieSeriesComponent implements OnChanges {
+export class PieSeries implements OnChanges {
   @Input() colors;
   @Input() series: any = [];
   @Input() dims;

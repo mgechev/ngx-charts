@@ -14,7 +14,7 @@ import { curveLinear } from 'd3-shape';
 
 import { calculateViewDimensions, ViewDimensions } from '../common/view-dimensions.helper';
 import { ColorHelper } from '../common/color.helper';
-import { BaseChartComponent } from '../common/base-chart.component';
+import { BaseChart } from '../common/base-chart.component';
 import { id } from '../utils/id';
 import { getUniqueXDomainValues, getScaleType } from '../common/domain.helper';
 
@@ -157,7 +157,7 @@ import { getUniqueXDomainValues, getScaleType } from '../common/domain.helper';
   styleUrls: ['../common/base-chart.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AreaChartNormalizedComponent extends BaseChartComponent {
+export class AreaChartNormalized extends BaseChart {
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';
   @Input() legendPosition: string = 'right';

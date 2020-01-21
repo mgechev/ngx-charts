@@ -31,7 +31,7 @@ import { sortLinear, sortByTime, sortByDomain } from '../utils/sort';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AreaSeriesComponent implements OnChanges {
+export class AreaSeries implements OnChanges {
   @Input() data;
   @Input() xScale;
   @Input() yScale;

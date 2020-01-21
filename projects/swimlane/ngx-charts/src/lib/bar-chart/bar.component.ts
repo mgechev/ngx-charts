@@ -37,7 +37,7 @@ import { transition } from 'd3-transition';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class BarComponent implements OnChanges {
+export class Bar implements OnChanges {
   @Input() fill;
   @Input() data: any;
   @Input() width: number;

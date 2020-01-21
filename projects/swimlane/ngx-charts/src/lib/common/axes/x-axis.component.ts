@@ -9,7 +9,7 @@ import {
   ChangeDetectionStrategy
 } from '@angular/core';
 
-import { XAxisTicksComponent } from './x-axis-ticks.component';
+import { XAxisTicks} from './x-axis-ticks.component';
 
 @Component({
   selector: 'g[ngx-charts-x-axis]',
@@ -45,7 +45,7 @@ import { XAxisTicksComponent } from './x-axis-ticks.component';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class XAxisComponent implements OnChanges {
+export class XAxis implements OnChanges {
   @Input() xScale;
   @Input() dims;
   @Input() trimTicks: boolean;
@@ -74,7 +74,7 @@ export class XAxisComponent implements OnChanges {
   strokeWidth: string = 'none';
   padding: number = 5;
 
-  @ViewChild(XAxisTicksComponent) ticksComponent: XAxisTicksComponent;
+  @ViewChild(XAxisTicks) ticksComponent: XAxisTicks;
 
   ngOnChanges(changes: SimpleChanges): void {
     this.update();

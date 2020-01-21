@@ -67,7 +67,7 @@ import { formatLabel } from '../label.helper';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AdvancedLegendComponent implements OnChanges {
+export class AdvancedLegend implements OnChanges {
   @Input() width: number;
   @Input() data;
   @Input() colors;

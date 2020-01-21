@@ -17,7 +17,7 @@ import { Component, SimpleChanges, Input, OnChanges, ChangeDetectionStrategy } f
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GridPanelSeriesComponent implements OnChanges {
+export class GridPanelSeries implements OnChanges {
   gridPanels: any[];
 
   @Input()

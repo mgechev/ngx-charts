@@ -40,7 +40,7 @@ import { formatLabel } from '../label.helper';
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LegendComponent implements OnChanges {
+export class Legend implements OnChanges {
   @Input() data;
   @Input() title;
   @Input() colors;

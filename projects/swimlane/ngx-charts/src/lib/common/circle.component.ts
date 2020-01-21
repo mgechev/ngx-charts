@@ -25,7 +25,7 @@ import {
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CircleComponent implements OnChanges {
+export class Circle implements OnChanges {
   @Input() cx;
   @Input() cy;
   @Input() r;
