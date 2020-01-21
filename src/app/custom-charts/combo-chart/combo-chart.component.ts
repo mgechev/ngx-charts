@@ -13,8 +13,8 @@ import {
 import { curveLinear } from 'd3-shape';
 import { scaleBand, scaleLinear, scalePoint, scaleTime } from 'd3-scale';
 import {
-  BaseChartComponent,
-  LineSeriesComponent,
+  BaseChart,
+  LineSeries,
   ViewDimensions,
   ColorHelper,
   calculateViewDimensions
@@ -27,7 +27,7 @@ import {
   styleUrls: ['./combo-chart.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class ComboChartComponent extends BaseChartComponent {
+export class ComboChartComponent extends BaseChart {
   @Input() curve: any = curveLinear;
   @Input() legend = false;
   @Input() legendTitle: string = 'Legend';
@@ -64,7 +64,7 @@ export class ComboChartComponent extends BaseChartComponent {
   @ContentChild('tooltipTemplate') tooltipTemplate: TemplateRef<any>;
   @ContentChild('seriesTooltipTemplate') seriesTooltipTemplate: TemplateRef<any>;
 
-  @ViewChild(LineSeriesComponent) lineSeriesComponent: LineSeriesComponent;
+  @ViewChild(LineSeries) lineSeriesComponent: LineSeries;
 
   dims: ViewDimensions;
   xScale: any;

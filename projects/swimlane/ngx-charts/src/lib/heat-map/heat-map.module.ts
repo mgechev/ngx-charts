@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { ChartCommonModule } from '../common/chart-common.module';
-import { HeatMapCellComponent } from './heat-map-cell.component';
-import { HeatCellSeriesComponent } from './heat-map-cell-series.component';
-import { HeatMapComponent } from './heat-map.component';
+import { HeatMapCell} from './heat-map-cell';
+import { HeatCellSeries} from './heat-map-cell-series';
+import { HeatMap} from './heat-map';
 
 @NgModule({
   imports: [ChartCommonModule],
-  declarations: [HeatMapCellComponent, HeatCellSeriesComponent, HeatMapComponent],
-  exports: [HeatMapCellComponent, HeatCellSeriesComponent, HeatMapComponent]
+  declarations: [HeatMapCell, HeatCellSeries, HeatMap],
+  exports: [HeatMapCell, HeatCellSeries, HeatMap]
 })
 export class HeatMapModule {}

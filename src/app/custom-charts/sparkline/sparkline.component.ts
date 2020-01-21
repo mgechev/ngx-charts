@@ -4,7 +4,7 @@ import { curveLinear } from 'd3-shape';
 
 import { getUniqueXDomainValues } from '@swimlane/ngx-charts/common/domain.helper';
 import {
-  BaseChartComponent,
+  BaseChart,
   ViewDimensions,
   ColorHelper,
   calculateViewDimensions
@@ -33,11 +33,11 @@ import {
       </svg:g>
     </ngx-charts-chart>
   `,
-  styleUrls: ['../../../../projects/swimlane/ngx-charts/src/lib/common/base-chart.component.scss'],
+  styleUrls: ['../../../../projects/swimlane/ngx-charts/src/lib/common/base-chart.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SparklineComponent extends BaseChartComponent {
+export class SparklineComponent extends BaseChart {
   @Input() autoScale = false;
   @Input() curve: any = curveLinear;
   @Input() schemeType: string = 'linear';

@@ -3,7 +3,7 @@ import { scaleLinear, scaleTime, scaleBand } from 'd3-scale';
 import { brushX } from 'd3-brush';
 import { select, event as d3event } from 'd3-selection';
 import {
-  BaseChartComponent,
+  BaseChart,
   ColorHelper,
   ViewDimensions,
   calculateViewDimensions,
@@ -67,11 +67,11 @@ import {
       </svg:g>
     </ngx-charts-chart>
   `,
-  styleUrls: ['../../../../projects/swimlane/ngx-charts/src/lib/common/base-chart.component.scss'],
+  styleUrls: ['../../../../projects/swimlane/ngx-charts/src/lib/common/base-chart.scss'],
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TimelineFilterBarChartComponent extends BaseChartComponent {
+export class TimelineFilterBarChartComponent extends BaseChart {
   @Input() autoScale = false;
   @Input() schemeType: string = 'ordinal';
   @Input() valueDomain: number[];

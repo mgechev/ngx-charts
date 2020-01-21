@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { ChartCommonModule } from '../common/chart-common.module';
-import { CardComponent } from './card.component';
-import { CardSeriesComponent } from './card-series.component';
-import { NumberCardComponent } from './number-card.component';
+import { Card} from './card';
+import { CardSeries} from './card-series';
+import { NumberCard} from './number-card';
 
 @NgModule({
   imports: [ChartCommonModule],
-  declarations: [CardComponent, CardSeriesComponent, NumberCardComponent],
-  exports: [CardComponent, CardSeriesComponent, NumberCardComponent]
+  declarations: [Card, CardSeries, NumberCard],
+  exports: [Card, CardSeries, NumberCard]
 })
 export class NumberCardModule {}

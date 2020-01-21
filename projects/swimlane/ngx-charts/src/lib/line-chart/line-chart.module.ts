@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { ChartCommonModule } from '../common/chart-common.module';
-import { LineComponent } from './line.component';
-import { LineChartComponent } from './line-chart.component';
-import { LineSeriesComponent } from './line-series.component';
+import { Line} from './line';
+import { LineChart} from './line-chart';
+import { LineSeries} from './line-series';
 
 @NgModule({
   imports: [ChartCommonModule],
-  declarations: [LineComponent, LineChartComponent, LineSeriesComponent],
-  exports: [LineComponent, LineChartComponent, LineSeriesComponent]
+  declarations: [Line, LineChart, LineSeries],
+  exports: [Line, LineChart, LineSeries]
 })
 export class LineChartModule {}
